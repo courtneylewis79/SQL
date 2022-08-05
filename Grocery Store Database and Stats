@@ -1,0 +1,28 @@
+Create a grocery store database called "grocery"
+
+CREATE TABLE grocery (id INTEGER PRIMARY KEY, item TEXT, quantity INTEGER, color TEXT, aisle TEXT);
+
+INSERT INTO grocery VALUES (1, "apples", 5, "red", 1);
+INSERT INTO grocery VALUES (2, "bananas", 6, "yellow", 1);
+INSERT INTO grocery VALUES (3, "carrots", 3, "orange", 2);
+INSERT INTO grocery VALUES (4, "eggplant", 2, "purple", 2);
+INSERT INTO grocery VALUES (5, "fruitdip", 1, "white", 1);
+INSERT INTO grocery VALUES (6, "grapes", 15 ,"green", 1);
+INSERT INTO grocery VALUES (7, "halos", 6, "orange", 1);
+INSERT INTO grocery VALUES (8, "jalapenos", 2, "green", 2);
+INSERT INTO grocery VALUES (9, "kiwi", 3, "brown", 1);
+INSERT INTO grocery VALUES (10, "lemons", 8, "yellow", 1);
+INSERT INTO grocery VALUES (11, "limes", 8, "green", 1);
+INSERT INTO grocery VALUES (12, "onions", 1, "white", 2);
+INSERT INTO grocery VALUES (13, "peas", 15, "green", 2);
+INSERT INTO grocery VALUES (14, "rice", 1, "white", 2);
+INSERT INTO grocery VALUES (15, "sunflowers", 1, "black", 2);
+
+Display the database
+SELECT * FROM grocery;
+
+Display the database ordered by quantity
+SELECT * FROM grocery ORDER BY quantity;
+
+Display the database by aisle where there is more than 1 item
+SELECT * FROM grocery WHERE quantity >1 ORDER BY aisle;
